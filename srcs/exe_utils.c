@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minishell.h"
+#include "../includes/minishell.h"
 
 //checks if the input[0] has "./" before the executable name
 //if it does it prints perror(path), if it doesn't it prints

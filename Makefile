@@ -18,22 +18,22 @@ GREEN		=		\033[0;32m
 RED			=		\033[0;31m
 END			=		\033[0m
 
-SRC =   main.c \
-		exe_utils.c \
-		builtins.c \
-		init.c \
-		clean_up.c \
-		export_utils.c \
-		parser.c \
-		parser_sign.c \
-		parser_list.c \
-		built_ins_2.c \
-		updates_at_start.c \
-		pipes.c \
-		redirects.c \
-		signals.c \
-		here_document.c \
-		built_ins_3.c \
+SRC =   srcs/main.c \
+		srcs/exe_utils.c \
+		srcs/builtins.c \
+		srcs/init.c \
+		srcs/clean_up.c \
+		srcs/export_utils.c \
+		srcs/parser.c \
+		srcs/parser_sign.c \
+		srcs/parser_list.c \
+		srcs/built_ins_2.c \
+		srcs/updates_at_start.c \
+		srcs/pipes.c \
+		srcs/redirects.c \
+		srcs/signals.c \
+		srcs/here_document.c \
+		srcs/built_ins_3.c \
 
 OBJ = $(SRC:.c=.o)
 

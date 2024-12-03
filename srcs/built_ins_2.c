@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minishell.h"
+#include "../includes/minishell.h"
 
 //updates the envp array with the new PWD and OLDPWD
 void	ft_cd_update(t_data *data)

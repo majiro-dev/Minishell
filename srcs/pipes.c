@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minishell.h"
+#include "../includes/minishell.h"
 
 //counts the number of pipes in the input linked list
 int	ft_count_pipes(t_input *list)
@@ -28,6 +28,7 @@ int	ft_count_pipes(t_input *list)
 	}
 	return (count);
 }
+
 
 char	**ft_path_arguments(t_input *current)
 {
@@ -54,13 +55,6 @@ char	**ft_path_arguments(t_input *current)
 	return (tmp);
 }
 
-char	**ft_split_join(t_input *current)
-{
-	char	**tmp;
-
-	tmp = ft_path_arguments(current);
-	return (tmp);
-}
 
 //executes all the commands in the input linked list
 //joins the content of all nodes until it finds a pipe
@@ -80,7 +74,7 @@ void	ft_pipeline(t_data *data, int pipecount)
 	{
 		if (pipe(pipefd) == -1)
 			perror("pipe");
-		data->input = ft_split_join(data->current);
+		data->input = ft_path_arguments(data->current);
 		if (c == pipecount)
 			ft_command(data, inputfd, STDOUT_FILENO, c);
 		else

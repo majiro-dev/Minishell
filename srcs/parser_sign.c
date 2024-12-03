@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minishell.h"
+#include "../includes/minishell.h"
 
 //removes the first and last character the list->content string
 void	ft_remove_quotes(t_input *list)

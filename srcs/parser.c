@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minishell.h"
+#include "../includes/minishell.h"
 
 //returns the variable value from an environment variable
 char	*ft_get_env(char *input, t_data *data)

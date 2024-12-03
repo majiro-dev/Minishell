@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minishell.h"
+#include "../includes/minishell.h"
 
 //checks if the first argument is a builtin command and if it is, executes it
 //and returns 1, if it isn't, returns 0

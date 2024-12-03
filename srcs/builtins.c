@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "minishell.h"
+#include "../includes/minishell.h"
 
 //changes the current directory to the one specified in the input
 //if no input is specified, it changes the current directory to the home
